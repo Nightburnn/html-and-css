@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+
+  <title>Madara Uchiha</title>
+  
+  
+  
+  
+<style>
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,300';
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  color: #181818;
+}
+
+header {
+  background-image: url("https://i.pinimg.com/originals/b4/c1/fb/b4c1fbf0e913bf9365c8fa0dcc48c0c0.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+#effect {
+  height: 100vh;
+  background: radial-gradient(circle, rgba(185,185,185,0.2),  rgba(40,40,40, 0.6));
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+header h1, header h3, header h4 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 4.3em;
+  letter-spacing: 0.13em;
+  padding-bottom: 0.21em;
+}
+
+header h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+}
+
+header h4 {
+  font-weight: 300;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
+}
+
+header i {
+  text-align: center;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  color: #FFF;
+  animation: 1.5s bounce infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+} 
+
+#effect div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  margin-top: -5vh;
+}
+
+#content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: auto;
+  color: #242424;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#about {
+  padding: 1em;
+  background-color: #F2F2F2;
+  position: relative;
+}
+
+#about:after {
+  content: '';
+  display: block;  
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 33px solid #F2F2F2;
+  border-right: 50vw solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 50vw solid transparent;
+}
+
+.section {
+  text-align: center;
+  font-size: 3em;
+  margin: auto;
+  margin-bottom: 0.4em;
+  color: #8F000A;
+}
+
+#about p {
+  margin: 0 10vw;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+b {
+  font-weight: 600;
+  color: #8F000A;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+i {
+  color: #303030;
+}
+
+#appointment {
+  padding: 60px 0;
+  background-color: #8F000A;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #F2F2F2;
+}
+
+#appointment i {
+  color: #F2F2F2;
+  font-size: 3em;
+  padding-right: 10px;
+}
+
+#appointment p {
+  font-size: 1.3em;
+  padding-left: 10px;
+  border-left: 2px solid #F2F2F2;
+  font-weight: 300;
+}
+
+#contentQuote {
+  max-width: 60vw;
+}
+
+#containerTimeline {
+  background-color: #F2F2F2;
+  width: 100%;
+  position: relative;
+}
+
+#containerTimeline:after {
+  content: '';
+  display: block;  
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 33px solid #F2F2F2;
+  border-right: 50vw solid transparent;
+  border-top: 0 solid transparent;
+  border-left: 50vw solid transparent;
+}
+
+/* 
+ * --  Timeline --
+ * Basado en: https://codepen.io/itbruno/pen/KwarLp
+ */
+.timelineItem:after, .timelineItem:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+}
+
+#timeline:before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #8F000A;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+#timeline:after {
+  content: '':
+  ;clear:; both;
+  display: table;
+  width: 100%;
+}
+
+.timelineItem {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timelineIcon {
+  background: #8F000A;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.timelineIcon i {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.timelineContent {
+  width: 45%;
+  background: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.timelineContent h2 {
+  padding: 15px;
+  background: #8F000A;
+  color: #FFF;
+  margin: -20px -20px 0 -20px;
+  border-radius: 3px 3px 0 0;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.timelineContent h3 {
+  font-weight: 300;
+  color: #434343;
+  padding: 8px 0;
+  font-size: 1em;
+}
+
+.timelineContent div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.timelineContent img {
+  width: 50%;
+  height: auto !important;
+  max-height: 200px;
+  padding: .5em;
+  object-fit: contain;
+}
+
+.timelineContent p {
+  line-height: 1.45em;
+}
+
+.timelineContent:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #8F000A;
+}
+
+.timelineContent.right {
+  float: right;
+}
+
+.timelineContent.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #8F000A;
+}
+
+@media (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  .timelineContent {
+    width: 90%;
+    float: right;
+  }
+  .timelineContent:before, .timelineContent.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #8F000A;
+  }
+  .timelineIcon {
+    left: 0;
+  }
+  .timelineContent div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .timelineContent img {
+    width: 80%;
+    height: auto !important;
+    display: block;
+    padding: .5em;
+  }
+}
+
+#edge {
+  display: block;
+  left: 0;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-top: 33px solid #F2F2F2;
+  border-right: 50vw solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 50vw solid transparent;
+  z-index: 3;
+}
+
+#miiverse {
+  background-color: #8F000A;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+  margin-top: -33px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #F2F2F2;
+}
+
+#miiverse p {
+  font-size: 1.3em;
+  padding-left: 10px;
+  border-left: 2px solid #F2F2F2;
+  font-weight: 300;
+}
+
+#contentMiiverse {
+  padding-right: 10px; 
+}
+
+footer {
+  background-color: #420005;
+  width: 100%;
+  position: relative;
+  color: #F2F2F2;
+  text-align: center;
+  padding-bottom: 1.7em;
+}
+
+footer:before {
+  content: '';
+  display: block;  
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 33px solid #420005;
+  border-right: 50vw solid transparent;
+  border-top: 0 solid transparent;
+  border-left: 50vw solid transparent;
+}
+
+footer h1 {
+  padding: 0.3em 0.7em;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+footer h2 {
+  text-align: center;
+  padding: 0.1em 0.7em;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+footer a {
+  color: #F2F2F2;
+}
+
+footer a:hover {
+  color: #F48484;
+  transition: 0.3s ease;
+}
+
+footer p {
+  font-size: 0.8em;
+  padding-top: 0.6em;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div id="container">
+  <header>
+    <div id="effect">
+      <div>
+         <h1>Madara Uchiha</h1>
+        <h2>Black Air Force Energy</h2>
+        <h3>the Ghost of the Uchiha</h3>
+        <h4>Episode <em>322 of the Naruto: Shippūden</em></h4>
+      </div>
+      <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+    </div>
+  </header>
+  <div id="content">
+    <div id="about">
+      <h2 class="section">About</h2>
+     <p><b>Madara Uchiha</b>(うちはマダラ, Uchiha Madara) was the legendary leader of the Uchiha clan. He founded <b>Konohagakure</b>.alongside his childhood friend and rival, Hashirama Senju, with the intention of beginning an era of peace. When the two couldn't agree on how to achieve that peace, they fought for control of the village, a conflict which ended in Madara's death.Madara, however, rewrote his death and went into hiding to work on his own plans. Unable to complete it in his natural life, he entrusted his knowledge and plans to Obito shortly before his actual death. Years later, Madara would be revived, only to see his plans foiled and ultimately, and finally, realising the error of his ways and making amends with Hashirama before his final death.</p>
+    </div>
+    
+    <div id="appointment">
+      
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
+      <div id="contentQuote">
+<p>"This world is full of things that don't go as you wish. The longer you live the more you realise reality is just made of pain, suffering, and emptiness…<br>Listen… In this world, whenever there is light, there are also shadows. As long as the concept of winners exist, there must also be losers.<br>The selfish desire of wanting to maintain peace causes wars and hatred is born to protect love</p>
+      </div>
+      
+    </div>
+    <div id="containerTimeline">
+      <h2 class="section">Timeline</h2>
+      <div id="timeline">
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-hospital-o"></i>
+          </div>
+          <div class="timelineContent">
+            <h2>Background</h2>
+            <h3>Naruto chapter 623, page 8(Manga)</h3>
+            <div>
+              <img src="https://i.pinimg.com/originals/b4/c1/fb/b4c1fbf0e913bf9365c8fa0dcc48c0c0.jpg">
+              <p>Madara was born during the <b> Warring States Period,</b>,and was the eldest of Tajima Uchiha's five children. Madara and his siblings grew up on the battlefield waging constant war with the Uchiha's rivals: the Senju. Three of his siblings died young, leaving Madara with only his younger brother, Izuna. This, combined with his naturally strong chakra, enabled the young Madara to defeat adult Senju in battle and develop a reputation as a genius</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+          <div class="timelineContent right">
+            <h2>Personality</h2>
+            <h3> Naruto chapter 621, page 18(Manga)</h3>
+            <div>
+              <img src="https://image.myanimelist.net/ui/bfln5jRa_L37ziNWm-xNvO2D25tKlvZ2ggsZe_iAtQ-L13_WguG2FxUkvU8yqCHVblekNeRH4jf6rSTfHJ-hj81SqObq7CDa5PlBXBZVf0s">
+              <p>Madara's childhood was a product of the times he lived in: the constant fighting made him a perfectionist that would keep at something until he mastered it, and his triumphs on the battlefield made him very confident in his abilities and talent. Whenever one of these personality traits was challenged, as they tended to be by Hashirama <b>Madara's competitive streak would emerge. Madara did not mind Hashirama's influence in this regard; he believed that the only way to survive in the shinobi world was to make allies with one's enemies.</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-gamepad"></i>
+          </div>
+          <div class="timelineContent">
+           <h2>Appearance</h2>
+            <h3>Naruto chapter 386, page 5(Manga)</h3>
+            <div>
+              <img src="https://qph.cf2.quoracdn.net/main-qimg-aa8e1b6d186cdd0096e552577faa572c-lq">
+              <p>Madara was a fair-skinned man with spiky, black hair that had a slight blue tint to it. In his childhood, <b>his hair was chin-length that parted to frame the sides of his face. His casual attire consisted of a blue long sleeve shirt and white pants.</b>, While on the battlefield he wore the standard Uchiha outfit: a black shirt with a high-collar left slightly open and the clan's crest on its back, with blue pants and bandages around his shins. <b> Around his waist he had a white sash that held a sack, presumably containing his ninja tools </b> Later, his sash was replaced by a belt, adorned with pouches and various weapons. He also wore another sash strapped across his shoulders which he used to hold his swords.</b> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-gamepad"></i>
+          </div>
+          <div class="timelineContent right">
+           <h2>Abilities</h2>
+            <h3>Naruto chapter 385, page 16(Manga)</h3>
+            <div>
+              <img src="https://i.pinimg.com/originals/6a/97/a1/6a97a19a7fecbaf71dc0fa0d22dda8b5.gif">
+              <p>Madara was one of the most powerful shinobi in history, recognised as the strongest Uchiha in his lifetime and for decades after his death.<b>A child prodigy, he killed several adult Senju before he had awakened his Sharingan.</b> History remembers him as the only one able to compete with Hashirama Senju, a <b>"God of Shinobi",</b> and pushed him to his absolute limits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-briefcase"></i>
+          </div>
+          <div class="timelineContent">
+            <h2>Chakra and Physical Prowess</h2>
+            <h3>Naruto chapter 561, page 11(Manga)</h3>
+            <div>
+              <img src="https://i.gifer.com/8UJS.gif">
+              <p>Even by Uchiha standards, Madara was born with very powerful chakra, described as very foul and evil. This is partly because he inherited <b>Indra's chakra</b> His large chakra reserves allowed him to fight nonstop for twenty-four hours before collapsing <b>and in his old age, summon the Demonic Statue of the Outer Path from its cage in the moon</b> of the company he's worked at for a decade and steers it back to solvency.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-gamepad"></i>
+          </div>
+          <div class="timelineContent right">
+            <h2>Fourth Shinobi World War: Countdown</h2>
+            <h3>Naruto chapter 490, pages 1-6(Manga)</h3>
+            <div>
+              <img src="https://media.tenor.com/uMG3Cqa2LecAAAAC/madara-sharingan.gif">
+              <p>During the Fourth Shinobi World War, Madara tests his body by tearing through the Fourth Division, thinning its numbers. The Fourth Division's initial attempts to stop Madara fail as he protects himself with Susanoo. When the Fifth Kazekage, Third Tsuchikage, and one of Naruto Uzumaki's shadow clones combine efforts, Madara is forced to activate his <b>Rinnegan and absorb the attack.</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timelineItem">
+          <div class="timelineIcon">
+            <i class="fa fa-user-plus"></i>
+          </div>
+          <div class="timelineContent">
+             <h2>Legacy</h2>
+            <h3>Naruto chapter 490, pages 1-6</h3>
+            <div>
+              <img src="https://static.wikia.nocookie.net/naruto/images/a/a9/Obito_Stealing_Chakra.png/revision/latest/scale-to-width-down/1000?cb=20150604113854">
+              <p>After his second death, Madara's greatest lasting influence was in Obito's actions, who used Madara's knowledge to create Akatsuki. Several years later, when Obito began operating under Madara's name, the mere possibility that he was truly Madara was enough to unify the ninja of the Five Great Shinobi Countries and trigger the Fourth Shinobi World War.</p>
+            </div>
+          </div>
+        </div>
+
+       
+    <div id="edge"></div>
+    <div id="miiverse">
+      <div id="contentMiiverse">
+       <p>Hello, once again i hope this Tribute has given you a better view as why Madara<br> is an absolute master of black Air Force energy. possibly the king for others but, for me he is a master.<br>Not only did he run an army’s fade but also ran the Kage’s fade<br>He was positively pushing p,Ripping out eyes, killing the mc and his bf(sasuke) AND dropping meteors like they're nothing. But my boy really asked the kages if they wanted the clones to use Susanoo or not.</p>
+      </div>
+    </div>
+    <footer>
+      <h1>Thank you, Madara Uchiha</h1>
+      <h2>Read more about Madara on his <a href="https://naruto.fandom.com/wiki/Madara_Uchiha#Abilities" target="_blank">Narutopedia</a></h2>
+      <p><a href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> tribute page coded by <a href="https://www.freecodecamp.org/fccb440e334-129a-4f4c-b1cc-1619a5786f07" target="_blank">Nightburn</a></p>
+    </footer>
+  </div>
+</div> 
+
+</body>
+
+</html>
+ 
