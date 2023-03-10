@@ -5,3 +5,5 @@ using HTML, CSS and Javascript
 * Multiplication App: Using Javascript to store the value of score and coverting the integer to a string with Json
 
 * Button Ripple Effect: click on button to see different colors, Javascript and css Keyframe animation used then css overflow hidden adjust the ripple effect
+
+* Random color and Hex generator: Gnerating random colors, Css had little play in this... was mostly javascipt using the hex and random color
