@@ -8,8 +8,6 @@ using HTML, CSS and Javascript
 
 * Random color and Hex generator: Gnerating random colors, Css had little play in this... was mostly javascipt using the hex and random color
 
-<<<<<<< HEAD
 * light-dark_mode_calculator: The HTML code defines the basic structure of the calculator, while the CSS code provides the styling information. The CSS code uses a combination of properties, such as box-shadow, background, border-radius, and gradients, to create the desired visual effects. The code also uses media queries to adjust the styling of the calculator for different screen sizes and light/dark mode settings.
-=======
+
 * Twitter-login-page Mockup: A simple HTML and CSS project that mimics the login page of the popular social media platform, Twitter.The form is styled using CSS to match the design of Twitter's login page, with a blue background and white text. Note: This is a mockup project and not a real login form. Do not use this form for any actual login purposes.
->>>>>>> e74b72f36ed7690d57dae724da28388b5bbb100b
